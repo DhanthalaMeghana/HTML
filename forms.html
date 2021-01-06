@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Forms</title>
+    </head>
+    
+    <body>
+        <form method="get">
+            <input type="text" name="email">
+            <input type="password" name="password">
+            <input type="submit">
+        </form>
+        <br>
+        <!--Now using placeholder attribute-->
+        <form  method="get">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit">
+        </form>
+         <br>
+        <!--Now changing size of input box-->
+        <form  method="get">
+            <input type="text" name="email" placeholder="Email" size="40px">
+            <input type="password" name="password" placeholder="Password" size="18px">
+            <input type="submit">
+        </form>
+         <br>
+        <!--Now we can limit the number of characters of the input also and also change the name of the submit button by giving the value attribute-->
+        <form  method="get">
+            <input type="text" name="email" placeholder="Email" size="40px" maxlength="30">
+            <input type="password" name="password" placeholder="Password" size="18px" maxlength="8">
+            <input type="submit" value="Login">
+        </form>
+         <br>
+        <!--We can also add labels and link then to the input spaces by giving an id to the inputs and then linking them to labels using for attribute-->
+        <form  method="get">
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="Email" size="40px" maxlength="30">
+            <label for="password">Password:</label>
+            <input  id="password"type="password" name="password" placeholder="Password" size="18px" maxlength="30">
+            <input type="submit" value="Login">
+        </form>
+         <br>
+        <!--Now adding line break and everything :) -->
+        <h1>Form 1</h1>
+        <form  method="get">
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="Email" size="40px" maxlength="30"><br><br>
+            <label for="password">Password:</label>
+            <input  id="password"type="password" name="password" placeholder="Password" size="18px" maxlength="30">
+            <br><br>
+            <input type="submit" value="Login">
+        </form>
+         <br>
+        <br>
+        
+        
+        
+        
+        <h1>Form 2(Checkout Form)</h1>
+        <!--Now we will choose shipping method and payment method-->
+        <form  method="get">
+            <label for="address">Address:</label>
+            <input  id="address"type="text" name="address" placeholder="Address" size="70px" maxlength="50">
+            <br><br>
+            <label for="postcode">Postcode:</label>
+            <input  id="postcode"type="text" name="postcode" placeholder="Postcode" size="18px" maxlength="10">
+            <br><br>
+            <label for="city">City:</label>
+            <input  id="city"type="text" name="city" placeholder="City" size="18px" maxlength="20">
+            <br><br>
+            <p>Choose your shipping method :</p>
+            <select name="shipping" id="shipping">
+                <option value="Free Super Save Shipping">Free Super Save Shipping</option>
+                <option value="Two-Day Shipping">Two-Day Shipping</option>
+                <option value="One-Day Shipping">One-Day Shipping</option>
+            </select>
+             <br><br>
+            <p>Choose your payment method :</p>
+            <!--In radio ,we can select only one option and so for all name is same.-->
+            <label>Paypal<input type="radio" name="payment" value="paypal"></label><br>
+            <label>Debit Card<input type="radio" name="payment" value="Debit Card"></label><br>
+            <label>Credit Card<input type="radio" name="payment" value="Credit Card"></label><br><br>
+            <label for="comments">Comments :</label><br>
+            <textarea id="comments"rows="5" cols="50" placeholder="Comments"></textarea><br><br>
+            <!--In checkbox,we can select multiple options-->
+            <!--We can use the checked attribute to make the checkboxes checked by default-->
+            <label>Sign me up for email updates<input type="checkbox" name="email updates" checked="checked"></label><br>
+            <label>Securely save my payment details.<input type="checkbox" name="save payment details" checked="checked"></label><br> <br>
+            <input type="submit" value="Submit">
+        </form>
+         <br>
+        
+    </body>
+</html>
